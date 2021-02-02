@@ -1,0 +1,150 @@
+* {
+margin:0;
+padding:0;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.slide {
+	overflow: hidden;
+}
+
+.topic {
+	text-transform: uppercase;
+	color: black;
+	letter-spacing: 0.2rem;
+	font-size: calc(20px + 1.4vw);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.nav {
+	z-index: 100;
+	width: 100%;
+	height: calc(50px + 4vh);
+  	display: inline-block;
+  	box-sizing: border-box;
+  	top: 0;
+  	background-color: white;
+  	position: absolute;
+
+}
+
+.nav-wrapper {
+	height: inherit;
+	width: inherit;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.oleg {
+	background: black;
+	color: white;
+	margin: 2px;
+	padding: 3px 5px;
+}
+
+.slide {
+	display: block;
+	height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.full-size-image {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.full-size-image img {
+	object-fit: cover;
+	position: relative;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.slide-done-by{
+	position: absolute;
+	color: white;
+	z-index: 1;
+	bottom: 10px;
+	right: 10px;
+	display: block;
+	width: calc(300px + 15vw);
+	height: auto;
+	padding: 2px;
+	overflow: hidden;
+	text-align: right;
+}
+
+.slide-done-by-text {
+	font-size: calc(15px + 1vw);
+}
+.bg-color {
+	background: #E9EAE5;
+	z-index: -1000;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.slide:nth-child(odd) .bg-color {
+	background: #242223;
+	color: white;
+}
+
+.slide-text-content {
+	padding: 6vw;
+}
+
+.slide-title {
+	margin: 0 0 2vh 0;
+	font-size: calc(20px + 1.5vw)
+}
+
+.slide-title:before {
+	content: "";
+	display: block;
+	width: calc(20px + 3vw);
+	height: 2px;
+	background-color: black;
+}
+
+.slide:nth-child(odd) .slide-title:before {
+	background-color: white;
+}
+
+.slide-text {
+	font-size: calc(12px + 1vh);
+	margin: 1px;
+}
+
+.slide-image {
+	display: block;
+	height: auto;
+	width: 35vw;
+	float: right;
+	margin: 0 0 10px 17px;
+}
+
+.slide-image img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
